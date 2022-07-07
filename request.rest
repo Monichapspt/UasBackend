@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/62c66e383205518ce168e651
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Sulastri",
+    "email" : "sulastri@gmail.com",
+    "gender" : "Female"
+}
+
+###
+PATCH http://localhost:5000/users/62c66e383205518ce168e651
+Content-Type: application/json
+
+{
+    "name" : "Arif",
+    "email" : "arif@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/62c66e383205518ce168e651
